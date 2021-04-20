@@ -1,0 +1,3184 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* cyrillic-ext  ------- ШРИФТ --------- */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'), url(http://fonts.gstatic.com/s/ptsans/v8/JX7MlXqjSJNjQvI4heMMGvY6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'), url(http://fonts.gstatic.com/s/ptsans/v8/vtwNVMP8y9C17vLvIBNZI_Y6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'), url(http://fonts.gstatic.com/s/ptsans/v8/9kaD4V2pNPMMeUVBHayd7vY6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'), url(http://fonts.gstatic.com/s/ptsans/v8/ATKpv8nLYAKUYexo8iqqrg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Sans Bold'), local('PTSans-Bold'), url(http://fonts.gstatic.com/s/ptsans/v8/kTYfCWJhlldPf5LnG4ZnHCEAvth_LlrfE80CYdSH47w.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Sans Bold'), local('PTSans-Bold'), url(http://fonts.gstatic.com/s/ptsans/v8/g46X4VH_KHOWAAa-HpnGPiEAvth_LlrfE80CYdSH47w.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Sans Bold'), local('PTSans-Bold'), url(http://fonts.gstatic.com/s/ptsans/v8/hpORcvLZtemlH8gI-1S-7iEAvth_LlrfE80CYdSH47w.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Sans Bold'), local('PTSans-Bold'), url(http://fonts.gstatic.com/s/ptsans/v8/0XxGQsSc1g4rdRdjJKZrNPk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+
+/* CSS */
+ /*html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%} */
+
+body,html{height:100%}
+
+body{margin:0}
+
+
+
+
+* {  
+margin: 0;  
+padding: 0;  
+}
+
+
+body {
+background: #f3f8f2;  /*rgba(245, 250, 244, 1);  rgba(60, 158, 27, 0.05); */
+padding: 0;
+line-height: 1,3;
+display: block;
+position:relative;
+cursor: default; 
+
+font-family: "Gotham Bold"; /*font-family: 'PT Sans',Helvetica,Roboto,Arial,sans-serif;*/
+font-weight: normal;
+font-style: normal;
+color: #3A3C3A;
+}
+
+
+div {
+display: block;
+}
+
+a{
+text-decoration: none;
+}
+
+li {
+ list-style-type: none;
+}
+
+select {
+font-size: 15px;
+height: auto!important;
+    padding: 3px 12px 5px 10px;
+  border: 2px solid #e0e0e0;
+}
+
+img{
+border: 0;
+vertical-align: middle;
+max-width: 100%;
+overflow: hidden;
+}
+
+
+/* Все элементы под тегом "P" */
+p{
+font-family: inherit;
+font-weight: normal;
+font-size: 1rem;
+line-height: 1.3;
+text-rendering: optimizeLegibility;
+}
+
+h3{
+font-family: 'Open Sans Light','Open Sans';
+font-weight: 200;
+font-size: 24px;
+line-height: normal;
+}
+
+h1{
+  font-size: 26px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+[type = text]{
+  padding: 6px 12px 6px 10px;
+  border: 2px solid #e0e0e0; 
+}
+
+textarea{
+  padding: 6px 12px 6px 10px;
+  border: 2px solid #e0e0e0;
+  overflow: auto;
+  resize: vertical;
+}
+
+label{
+  font-weight: 700!important;
+  font-family: "Gotham Bold";
+  color: #494949;
+}
+
+
+
+/* Скелет страницы - чтобы footer оставался внизу  */
+.Main_Body #Main_Section{clear:both;min-height:100%;height:auto!important;height:100%;/*margin-bottom:-75px*/}
+
+.Footer_Mini{clear:both;position:relative;height:75px}
+.Footer_Big{clear:both;position:relative;height:200px}
+/* --------------------*/
+
+/* Инпут поиска чего либо ксс Input Search  */
+.Search_Input{
+    padding-left: 25px;
+    background: #fff url(/mysite/img/Search_sign.svg) no-repeat;
+    background-size: 15px auto;
+    background-position: -moz-calc(0% + 5px);
+    background-position: -o-calc(0% + 5px);
+    background-position: -webkit-calc(0% + 5px);
+    background-position: -ms-calc(0% + 5px);
+	
+	    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.Label {
+display: block;
+padding-bottom: 5px;
+line-height: 1.5;
+font-weight: 700;
+width: 100%;
+float: left;
+}
+
+.Logo {
+float:left;
+height:100%;
+}
+
+.GlobalHeader {
+line-height: 3.5rem;
+/*text-align: center;*/
+background: #284F65;
+}
+
+.Header_line {
+Background:rgba(219, 255, 216, 0.91);
+padding-bottom: 10px;
+box-shadow: 0 1px 2px rgba(0,0,0,.3);
+
+}
+
+
+/* FOOTER */
+
+.GlobalFooter {
+background: #545454;
+padding-top: 1rem;
+display:block;
+position: relative;
+border:1px solid #7d7d7d;
+}
+
+
+
+.GlobalFooterUp {
+max-width: 60rem;
+width:100%;
+margin-left: auto;
+margin-right: auto;
+margin-top: 0;
+margin-bottom: 0;
+display: table;
+}
+
+.GlobalFooter_col {
+Position: relative;
+padding-left: .650rem;
+padding-right: .650rem;
+float: left;
+width: 31%;
+display: block;
+}
+
+
+.GlobalFooterBot {
+max-width: 60rem;
+width:100%;
+margin-left: auto;
+margin-right: auto;
+margin-top: 0;
+margin-bottom: 0;
+display: table;
+}
+
+.GlovalFooterBot_row {
+max-width: 60rem;
+width:100%;
+margin-left: auto;
+margin-right: auto;
+margin-top: 0;
+margin-bottom: 0;
+display: table;
+}
+
+.GlobalFooterBot-col {
+text-align: center!important;
+width: 100%;
+position: relative;
+padding-left: .650rem;
+padding-right: .650rem;
+float: left;
+display: table;
+}
+
+.FooterLogo {
+margin-bottom: 1.25rem;
+display: block;
+text-align: center!important;
+}
+
+.FooterLegal {
+font-size:.7rem;
+}
+
+.GlobalFooter a{
+color: #FFFFFF;
+text-decoration: none;
+cursor: pointer;
+font-weight: 600;
+}
+
+.GlobalFooter li{
+padding: 0;
+line-height: 1.5em;
+margin-bottom: 8px;
+}
+
+.site_links li {
+margin-left: 1rem;
+margin-right: 0.5rem;
+display: block;
+float: left;
+}
+.user_links li {
+margin-left: 2rem;
+margin-right: 0.5rem;
+display: block;
+float: right;
+}
+.GlobalHeader a {
+color: #EAEEF4;
+text-decoration: none;
+font-size: 1.2rem;
+font-weight: bold;
+}
+.GlobalHeader a:hover {
+color: #ACC4D2;
+}
+.header_1 {
+width: 100%;
+margin-left: auto;
+margin-right: auto;
+margin-top: 0;
+margin-bottom: 0;
+max-width: 81.25rem;
+display: table;
+
+}
+
+.logo {
+float: left;
+height: 100%;
+margin-right: 50px;
+}
+
+.GH_links {
+display: inherit!important;
+}
+
+.site_links {
+float: left;
+padding-left: 25rem;
+}
+
+.user_links {
+float: right;
+padding-right: 3rem;
+}
+
+
+.IndexUp {
+background-image: url('img/index_main_picture.png'); 
+background-repeat: no-repeat;
+background-position: center;
+background-position: top;
+background-size: cover;
+
+min-height: 26.90909rem;
+padding-top: 6.5rem;
+padding-bottom: 3rem;
+}
+
+.IndexUp_first {
+width: 100%;
+margin-left: auto;
+margin-right: auto;
+margin-top: 0;
+margin-bottom: 0;
+max-width: 81.25rem;
+}
+
+.IU_f-columns {
+position: relative;
+padding-left: .625rem;
+padding-right: .625rem;
+float: left;
+margin-left: 15%!important;
+}
+
+.IU_f-text {
+margin-left: 3.25rem;
+}
+
+.IU_f-text_1 {
+float: left;
+font-size: 4.5rem;
+color: #EAEEF4;
+padding: .5rem 1.25rem .25rem;
+background: rgba(40, 79, 101, 0.86);
+text-shadow: 0 1px 0 #222222;
+display: inline-block;
+border-radius: 0.25rem;
+}
+
+.IU_f-text_2 {
+float: left;
+font-size: 2.5rem;
+color: #EAEEF4;
+padding: .5rem 1.25rem .25rem;
+background: rgba(172, 196, 210, 0.86);
+text-shadow: 0 1px 0 #222222;
+display: inline-block;
+margin-top: .3rem;
+margin-left: 9.25rem;
+border-radius: 0.25rem;
+}
+
+.IndexUp_last {
+height: 70px;
+width: 100%;
+margin-left: auto;
+margin-right: auto;
+margin-top: 0;
+margin-bottom: 0;
+max-width: 81.25rem;
+}
+
+.IU_s-columns {
+position: relative;
+padding-left: .625rem;
+padding-right: .625rem;
+float: left;
+margin-left: 15%!important;
+}
+
+.IU_s-text {
+margin-left: 6.25rem;
+margin-right: 2.5rem;
+margin-top: 2rem;
+margin-bottom: 2rem;
+font-size: 1.1rem;
+color: #000000;
+}
+
+.IndexUp_third {
+padding-top: 37px;
+height: 70px;
+width: 100%;
+margin-left: auto;
+margin-right: auto;
+margin-top: 0;
+margin-bottom: 0;
+max-width: 81.25rem;
+}
+
+
+.IU_t-columns {
+position: relative;
+padding-left: .625rem;
+padding-right: .625rem;
+float: left;
+margin-left: 15%!important;
+width: 66%;
+}
+
+.IU_t-bottom {
+margin-top: 1.65rem;
+text-align: center;
+}
+
+.IU_t-bottom_1 {
+width: 12rem;
+display: inline-block;
+padding: 1rem 2.5rem 1rem 2.5rem;
+text-align:center;
+border-radius: 0.25rem;
+border: 0 solid transparent;
+background: linear-gradient(#30b1e2 0,#30b1e2 49%,#009fbd 51%);
+box-shadow:none; 
+margin-left: 2rem;
+}
+
+.IU_t-bottom_2 {
+width: 12rem;
+display: inline-block;
+padding: 1rem 2.5rem 1rem 2.5rem;
+text-align:center;
+border-radius: 0.25rem;
+border: 0 solid transparent;
+background: linear-gradient(#30b1e2 0,#30b1e2 49%,#009fbd 51%);
+box-shadow:none; 
+margin-left: 2rem;
+}
+
+
+/* Index нижняя середина  */
+
+.IndexDown {
+background-image: url(''); 
+background-repeat: no-repeat;
+background-position: center;
+padding-top: 75px;
+padding-bottom: 125px;
+}
+
+/* ???????    */
+
+.IndexMiddle h1 {
+text-align: center;
+color: #524946;
+}
+
+.IndexMiddle h3 {
+text-align: center;
+color: #524946;
+}
+
+.IndexMiddle h2 {
+text-align: center;
+color: #524946;
+}
+
+.IM_all_elements {
+max-width: 78.625rem;
+padding: 0.625rem;
+width: 100%;
+margin-left: auto;
+margin-right: auto;
+margin-top: 0;
+margin-bottom: 0;
+}
+
+.IM_element {
+float: left;
+position:relative;
+padding-left:.625rem;
+padding-right:.625rem;
+width: 31%;
+}
+
+.IM_element_double {
+float: left;
+position: relative;
+padding-left:.625rem;
+padding-right:.625rem;
+width: 47%;
+}
+
+.IM_element_1_double {
+background-image: url('elements.png'); 
+background-repeat: no-repeat;
+background-position: center;
+max-height: none;
+height: 18.4375rem;
+line-height: 18.4375rem;
+margin-bottom: 1.25rem;
+margin-left: 10rem;
+}
+
+.IM_element_2_double {
+background-image: url('elements.png'); 
+background-repeat: no-repeat;
+background-position: center;
+max-height: none;
+height: 18.4375rem;
+line-height: 18.4375rem;
+margin-bottom: 1.25rem;
+margin-right: 10rem;
+}
+.IM_element_1 {
+background-image: url('elements.png'); 
+background-repeat: no-repeat;
+background-position: center;
+max-height: none;
+height: 18.4375rem;
+line-height: 18.4375rem;
+margin-bottom: 1.25rem;
+}
+
+.IM_element_2 {
+background-image: url('elements.png'); 
+background-repeat: no-repeat;
+background-position: center;
+max-height: none;
+height: 18.4375rem;
+line-height: 18.4375rem;
+margin-bottom: 1.25rem;
+}
+
+.IM_element_3 {
+background-image: url('elements.png'); 
+background-repeat: no-repeat;
+background-position: center;
+max-height: none;
+height: 18.4375rem;
+line-height: 18.4375rem;
+margin-bottom: 1.25rem;
+}
+
+/* тут для sighup-type  */
+
+.Signup-type {
+padding-top: 75px;
+
+}
+.SUS_main {
+margin-left: auto;
+margin-right: auto;
+border: 4px solid;
+position:relative;
+margin-top: 0px;
+width: 960px;
+}
+
+.SUS_submain {
+padding:0.5rem;
+}
+.SUS_submain_1 {
+padding-left: 3rem;
+padding-right: 3rem;
+padding-top: .5rem;
+padding-bottom: .5rem;
+text-align:center;
+}
+
+.SUS_submain_2 {
+float: left;
+position: relative;
+margin-left: 2rem;
+margin-right: 2rem;
+width: 91%;
+display:block;
+text-align:center;
+}
+
+.SUS_s2_w1 {
+float:left;
+width: 50%;
+}
+
+.SUS_s2_w2 {
+float:left;
+width: 50%;
+}
+
+.SUS_submain_3 {
+margin-top: 10rem;
+padding-top: 3rem;
+text-align: left;
+}
+
+.SUS_s2_link {
+width: 12rem;
+display: inline-block;
+padding: 1rem 2.5rem 1rem 2.5rem;
+text-align:center;
+border-radius: 0.25rem;
+border: 0 solid transparent;
+background: linear-gradient(#30b1e2 0,#30b1e2 49%,#009fbd 51%);
+box-shadow:none; 
+}
+
+
+/* sign-up freelancer */
+
+.Signup-freelancer {
+width: 960px;
+position: relative;
+margin: 0 auto;
+}
+
+.SUF_main {
+width:100%;
+margin-top: 5rem;
+margin-bottom:15px;
+overflow-x: hidden;
+border: 3px solid #5F76BE;
+border-radius:8px;
+}
+
+.SUF_submain {
+position: relative;
+margin: 20px auto;
+width: 90%;
+}
+
+.SUF_tittle {
+text-align:center;
+}
+
+.SUF_form {
+position: relative;
+line-height: inherit;
+margin: 0 0 1.5em;
+}
+
+.SUF_signforms {
+margin: auto;
+width: 300px;
+position: relative;
+}
+
+.Signup_first_name {
+margin-bottom: 7px;
+vertical-align: baseline;
+position: relative;
+clear: both;
+}
+
+.Signup_last_name {
+margin-bottom: 7px;
+vertical-align: baseline;
+position: relative;
+clear: both;
+}
+
+.Signup_username {
+margin-bottom: 7px;
+vertical-align: baseline;
+position: relative;
+clear: both;
+}
+
+.Signup_email {
+margin-bottom: 7px;
+vertical-align: baseline;
+position: relative;
+clear: both;
+}
+
+.Signup_country {
+margin-bottom: 7px;
+vertical-align: baseline;
+position: relative;
+clear: both;
+}
+
+.Signup_password {
+margin-bottom: 7px;
+vertical-align: baseline;
+position: relative;
+clear: both;
+}
+
+.Signup_company {
+margin-bottom: 7px;
+vertical-align: baseline;
+position: relative;
+clear: both;
+}
+
+
+
+
+
+
+
+
+/* часть валидации формы регистрации  */
+
+.info {
+	text-align: left;
+	padding: 5px;
+	font: normal 11px Verdana, Arial, Helvetica, sans-serif;
+	color: #fff;
+	position: absolute;
+	display: none;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: -1px 1px 2px #a9a9a9;
+	-moz-box-shadow: -1px 1px 2px #a9a9a9;
+	box-shadow: -1px 1px 2px #a9a9a9;
+}
+
+.error {
+	background: #f60000;
+	border: 3px solid #d50000;
+
+}
+
+.correct {
+	background: #56d800;
+	border: 3px solid #008000;
+}
+
+.wrong {
+	font-weight: bold;
+	color: #e90000;
+}
+
+.normal {
+	font-weight: normal;
+	color: #222;
+}
+
+#send {
+	background: #3f5a81;
+	width: 100%;
+	border: 5px solid #0F1620;
+	font: bold 30px Verdana, sans-serif;
+	color: #fafafa;
+	text-shadow: 1px 1px 1px #0F1620;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+}
+
+#send:hover {
+	background: #4d76b1;
+	border: 5px solid #253750;
+	color: #fff;
+}
+
+#send:active {
+	text-indent: -10px;
+}
+
+
+
+
+/* login */
+
+
+.Login-type {
+padding-top: 75px;
+padding-bottom: 75px;
+}
+.Login_main {
+margin-left: 13rem;
+margin-right: auto;
+border: 4px solid;
+position:relative;
+margin-top: 0px;
+width: 960px;
+}
+
+.Login_submain {
+padding:0.5rem;
+}
+.Login_submain_1 {
+padding-left: 3rem;
+padding-right: 3rem;
+padding-top: .5rem;
+padding-bottom: .5rem;
+text-align:center;
+}
+
+.Login_form {
+line-height: inherit;
+margin: 0 21em 1.5em;
+width: 307px;
+}
+
+.Login_form_username_or_email {
+margin-bottom: 7px;
+vertical-align: baseline;
+position: relative;
+clear: both;
+}
+
+.Login_form_password{
+margin-bottom: 7px;
+vertical-align: baseline;
+position: relative;
+clear: both;
+}
+
+
+/* стили для freelance-workspace */ 
+
+.FW_logo{
+background: url(/mysite/img/Logo_Profile.svg) no-repeat;
+  width: 230px;
+  height: 51px;
+  padding: 0;
+  position: absolute;
+  top: 5px;
+  /*left: -15px;*/
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  z-index: 1;
+  
+  zoom: 0.75;
+}
+
+.FW_home_icon{
+background:  url(/mysite/img/Home.png) no-repeat;
+  width: 128px;
+  height: 128px;
+  padding: 0;
+  top: 5px;
+  /*left: -15px;*/
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  z-index: 1;
+  
+  zoom: 0.35;
+  
+
+display: inline-block;
+position: relative;
+}
+
+.FW_help_icon{
+background:  url(/mysite/img/Help.png) no-repeat;
+  width: 128px;
+  height: 128px;
+  padding: 0;
+  padding-right:5px;
+  top: 5px;
+  /*left: -15px;*/
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  z-index: 1;
+  
+  zoom: 0.3;
+  
+
+display: inline-block;
+position: relative;
+}
+
+.FW_exit_icon{
+background:  url(/mysite/img/Exit.png) no-repeat;
+  width: 128px;
+  height: 128px;
+  padding: 0;
+  padding-right:5px;
+  top: 5px;
+  /*left: -15px;*/
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  z-index: 1;
+  
+  zoom: 0.3;
+  
+
+display: inline-block;
+position: relative;
+}
+
+.FW_config_icon{
+background:  url(/mysite/img/Config.png) no-repeat;
+  width: 128px;
+  height: 128px;
+  padding: 0;
+  padding-right:5px;
+  top: 5px;
+  /*left: -15px;*/
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  z-index: 1;
+  
+  zoom: 0.3;
+  
+
+display: inline-block;
+position: relative;
+}
+
+
+.FW_top_nav {
+padding-top: 20px;
+padding-left: 0!important;
+margin: 0 auto;
+position: relative;
+width: 960px;
+}
+
+.FW_top_nav_ul {
+display: inline-block;
+margin: 0;
+padding-top: 30px;
+padding-left: 19px;
+}
+
+.FW_top_nav_username{
+position: absolute;
+bottom:0;
+right:0;
+top:-25px;
+bottom: initial;
+
+left: 550px;
+}
+
+
+
+.FW_top_nav_ul_current {
+display: inline-block;
+vertical-align:bottom;
+position:relative;
+background: 0;
+padding: 0;
+margin: 0;
+height: 45px;
+}
+
+.FW_top_nav_ul_current_index {
+display: inline-block;
+vertical-align:bottom;
+position:relative;
+background: 0;
+padding: 0;
+margin: 0;
+padding-bottom: 45px;
+display: inline-block;
+position: relative;
+}
+
+.FW_GlobalHeader {
+margin-bottom: 30px;
+min-width: 960px;
+padding-top: 10px;
+background:#3C9E1B -webkit-linear-gradient(top,#8ED232 0,#58C21F 7%,#3DA11A 75%,#337E1D 95%,#144207 100%); /*background-color:  #3C9E1B;*/
+}
+
+.FW_top_nav_ul_last {
+display: inline-block;
+vertical-align:bottom;
+position:relative;
+background: 0;
+padding: 0;
+margin: 0;
+}
+
+.FW_top_nav_href {
+padding: 15px 25px 11px;
+line-height:1em;
+text-decoration:none;
+font-size:19px;
+word-wrap:break-word;
+color: #fff;
+
+display: inline-block;
+position: relative;
+}
+
+
+/* Верхняя панель employer наведение */
+.FW_top_nav_href:hover {
+  background-color:#6DD245;
+  
+   
+	    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 2px 2px -1px #e3e3e3;
+}
+
+.FW_top_nav_2_href:hover {
+  background-color:#6DD245;
+  	    border-radius: 3px 3px 3px 3px;
+}
+
+.FW_home_icon:hover {
+  background-color:#6DD245;
+  	    border-radius: 3px 3px 3px 3px;
+}
+
+.FW_top_nav_2_href_current:hover {
+  background-color:#6DD245;
+  	    border-radius: 0 0 3px 3px;
+}
+
+
+.FW_top_nav_2_href {
+padding: 15px 25px 11px;
+line-height:1em;
+text-decoration:none;
+font-size:19px;
+word-wrap:break-word;
+color: #04450D;
+
+display: inline-block;
+position: relative;
+}
+
+.FW_top_nav_2_href_current {
+padding: 15px 25px 11px;
+line-height:1em;
+text-decoration:none;
+font-size:19px;
+word-wrap:break-word;
+color: #04450D;
+
+display: inline-block;
+position: relative;
+
+	    border-radius: 0 0 3px 3px;
+    box-shadow: 0 2px 2px -1px #e3e3e3;
+	border-left: 1px solid #516D4F;
+	border-right: 1px solid #516D4F;
+	border-bottom: 1px solid #516D4F;	
+	background-color:#E2E4E4;
+}
+
+.FW_top_nav_href_current{
+padding: 15px 25px 11px;
+line-height:1em;
+text-decoration:none;
+font-size:17px;
+word-wrap:break-word;
+color: #524946;
+background: #fff;
+
+-webkit-border-radius: 7px 7px 0 0;
+-moz-border-radius: 7px 7px 0 0;
+  border-radius: 7px 7px 0 0;
+
+display: inline-block;
+position: relative;
+}
+
+.header_3 {
+border:0;
+background: #fff;
+
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.3);
+  -moz-box-shadow: 0 1px 2px rgba(0,0,0,.3);
+  box-shadow: 0 1px 2px rgba(0,0,0,.3);
+}
+
+.FW_top_subnav {
+margin: 0 auto;
+position: relative;
+width: 960px;
+
+
+}
+
+.FW_top_subnav_ul {
+padding-left: 0;
+margin:0;
+padding-right:1px;
+
+}
+
+.FW_top_subnav_ul_current {
+padding-left: 29px;
+display: inline-block;
+line-height:1em;
+padding:0 0 0 30px;
+position: relative;
+
+}
+
+.FW_top_subnav_ul {
+padding-left: 29px;
+display: inline-block;
+line-height:1em;
+padding:0 0 0 30px;
+position: relative;
+
+}
+
+.FW_top_user {
+bottom: initial;
+top: -10px;
+position: absolute;
+margin-left: 600px;
+}
+
+.FW_top_user_name {
+display: inline-block;
+padding:18px 0 18px 30px;
+position: relative;
+  top: 24px;
+  left: 100px;
+}
+
+.FW_top_user_top {
+display: inline-block;
+padding:25px 35px 5px 30px;
+position: relative;
+float:right;
+}
+
+.FW_top_user_bot{
+display: inline-block;
+padding:0px 0 18px 30px;
+position: relative;
+}
+
+.FW_middle {
+width: 960px;
+margin: 0 auto;
+margin-bottom: 1.5rem;
+position: relative;
+overflow-x: hidden;
+/*border: 3px solid rgba(68, 192, 70, 0.48);*/
+/*border-radius:8px;*/
+padding: 0 7px 0 7px;
+min-height: 500px;
+}
+
+.FW_middle_Read_only{
+vertical-align: baseline;
+position: relative;
+margin-bottom: 20px;
+clear: both;
+}
+
+
+
+
+
+/* Левая панель в job.php  Employer */
+.FM_middle_nav {
+padding: 0;
+float: left;
+width: 17%;
+display: block;
+
+
+margin-top: 15px;
+
+    border: 3px solid #e3e4e3;
+    border-radius: 8px;
+	    overflow-x: hidden;
+		background-color: rgba(237, 237, 237, 0.36);
+}
+
+/* Левая панель в job.php  UL Employer */
+.FW_middle_left_ul {
+padding: 15px;
+text-decoration:none;
+}
+
+/* Левая панель в job.php  LI Employer */
+.FW_middle_left_li{
+padding: 5px;
+
+}
+
+.FW_middle_left_a{
+    text-decoration: none;
+	    color: #1B453A;
+}
+
+
+.FM_middle_center {
+padding-right: 0;
+padding-left: 20px;
+width: 70%;
+float: left;
+padding: 0 12px;
+margin-bottom:20px;
+}
+
+.FW_middle_right{
+padding-right: 0;
+display: table-cell;
+float: none;
+width: auto;
+}
+
+
+/* index.php кнопки под картинкой post job */
+.EW_index_bottom{
+width: 170px;
+margin: 0 10px 24px;
+display: inline-block;
+font-size: 18px;
+padding: 12px 24px;
+font-weight: 600;
+height: 50px;
+
+color: #fff;
+background: #7ada4a;
+background: #7ada4a -webkit-linear-gradient(top,#b2ff4a 0,#6bde2d 7%,#43b81a 75%,#3bb118 100%);
+background: #7ada4a -moz-linear-gradient(top,#b2ff4a 0,#6bde2d 7%,#43b81a 75%,#3bb118 100%);
+background: #7ada4a -o-linear-gradient(top,#b2ff4a 0,#6bde2d 7%,#43b81a 75%,#3bb118 100%);
+background: #7ada4a linear-gradient(top,#b2ff4a 0,#6bde2d 7%,#43b81a 75%,#3bb118 100%);
+border: 1px solid #509e19;
+border-bottom-color: #198d0f;
+border-top-color: #6dbe38;
+-webkit-box-shadow: 0 1px 3px rgba(38,151,72,.5),inset 0 1px 0 #9fe662;
+-moz-box-shadow: 0 1px 3px rgba(38,151,72,.5),inset 0 1px 0 #9fe662;
+box-shadow: 0 1px 3px rgba(38,151,72,.5),inset 0 1px 0 #9fe662;
+text-shadow: 0 1px 0 #25a811;
+height: 20px;
+
+  border-radius: 6px;
+}
+
+
+
+
+.ActivationAd {
+border: 3px solid rgba(145, 145, 145, 0.6);
+border-radius:8px;
+width: 960px;
+margin: 0 auto;
+margin-bottom:10px;
+position: relative;
+overflow-x: hidden;
+}
+
+.R_left {
+padding: 0;
+float: left;
+width: 17%;
+display: block;
+
+}
+
+.R_right {
+padding-right: 0;
+padding-left: 20px;
+width: 80%;
+float: left;
+padding: 0 12px;
+}
+
+.R_l_photo {
+min-height: 125px;
+}
+
+.R_l_info {
+border: solid 1px #d7d7d7;
+padding: 10px 15px 15px;
+min-height: 20px;
+}
+
+.R_r_first {
+border-bottom:dotted 1px #d7d7d7;
+padding: 5px 0px 15px 15px;
+width: 100%;
+min-height: 100px;
+position: relative;
+float: left;
+display: inline;
+}
+
+.R_r_f_nametittle {
+margin-bottom: 30px;
+display: inline;
+float: left;
+padding-right: 20px;
+width: 450px;
+}
+
+.R_r_f_name {
+width: 400px;
+}
+
+.R_r_f_botton {
+width: 280px;
+padding-right: 0px;
+float: left;
+display: inline;
+padding-left: 10px;
+}
+
+.R_r_f_info {
+position: absolute;
+bottom: 15px;
+}
+
+.R_r_f_info_in {
+display: inline;
+padding-right: 5px;
+}
+
+.R_r_second {
+padding: 15px 0px 0px 15px;
+min-height: 650px;
+width: 100%;
+position: relative;
+float: left;
+display: inline;
+}
+
+.R_r_s_overview {
+border-bottom:dotted 1px #d7d7d7;
+display: inline;
+float: left;
+padding-right: 20px;
+width: 100%;
+}
+
+.R_r_s_tests {
+display: inline;
+float: left;
+padding-right: 20px;
+width: 100%;
+}
+
+
+/* ewmployer-workspace  -  job.php   список заявок */
+.EW-response-ul {
+min-height: 720px;
+margin: 0;
+border: 0;
+vertical-align: baseline;
+display: block;
+}
+
+.EW-response-li {
+margin-bottom: 40.5px;
+margin: 30px 0 18px;
+padding-bottom: 18px;
+border-bottom: 1px solid #c0c1c1;
+vertical-align: baseline;
+
+padding-left: 15px;
+padding-right:15px;
+
+    border: 3px solid #e3e4e3;
+    border-radius: 8px;
+}
+
+.EW-response-whilediv {
+height: auto;
+overflow: hidden;
+margin: 5px 0;
+
+}
+
+.EW-response-whileh2 {
+margin-bottom: 15px!important;
+word-break: break-all;
+width: 75%;
+float: left;
+box-sizing: border-box;
+
+}
+
+.EW-response-whilefirst{
+float:left;
+margin-bottom: 15px!important;
+margin-top: 20px;
+width: 100%;
+}
+
+.EW-response-whilesecond{
+margin-bottom: 5px!important;
+float: left;
+margin-top: 5px;
+width: 100%;
+}
+
+.EW-response-testjob{
+margin-bottom: 5px!important;
+float: left;
+margin-top: 5px;
+}
+
+
+.FW_middle_right_up {
+background-color: rgba(237, 237, 237, 0.36);
+width: 100%;
+margin-bottom: 15px;
+overflow-x: hidden;
+border: 3px solid #e3e4e3;
+border-radius: 8px;
+margin-top: 10px;
+}
+
+
+/* Index employer правая панелька "Мой профиль" */
+.FW_middle_right_up_profile {
+padding: 5px 16px 16px 16px;
+}
+
+/* Index employer правая панелька "Мой профиль"  верхняя часть - название. так же в job.php левая панель верхнаяя часть*/
+.FW_middle_right_up_profile_title {
+padding: 5px 22% 5px 22%;
+Background:#e3e4e3;
+    text-align: center;
+
+}
+
+.FW_middle_right_up_profile_content{
+padding: 5px;
+}
+
+.FW_middle_right_up_profile_content_div{
+float: right;
+}
+
+
+/* Репутация звёзды */
+.FW_middle_right_up_profile_content_star{
+background-image: url(img/star_gray.svg)!important;
+  line-height: 0;
+  
+  display: inline-block;
+  height: 16px;
+  width: 80px;
+  overflow: hidden;
+  background-repeat: repeat-x!important;
+  background-size: auto 16px;
+  background-position: 0 0!important;
+}
+
+.FW_middle_right_up_profile_content_star_count{
+  display: inline-block;
+  height: 16px;
+  width: 80px;
+  overflow: hidden;
+  background-repeat: repeat-x!important;
+  background-image: url(img/star_gold.svg)!important;
+  background-size: auto 16px;
+  background-position: 0 0!important;
+}
+
+/* Виды отступов в index employer В панели Мой профль - Статус: ___ */
+.FW_middle_right_up_profile_status_active{
+padding: 0 20% 5px 20%;
+}
+
+.FW_middle_right_up_profile_status_block{
+padding: 0 17% 5px 17%;
+}
+
+.FW_middle_right_up_profile_status{
+padding: 0 10% 5px 10%;
+}
+
+.FW_middle_right_up_profile_status_current_active{
+float: right;
+color: rgba(47, 142, 14, 1);
+}
+
+.FW_middle_right_up_profile_status_current_unactive{
+float: right;
+color: rgba(176, 40, 40, 1);
+}
+
+.FW_middle_right_up_profile_status_tip{
+float:right;
+}
+
+/* Раздел под Мой профиль. 4 отдела */
+ .FW_index_under_profile_img{ 
+ opacity: .4;
+  width: 30px;
+  float: left;
+  margin-right: 1em;
+  }
+
+ .FW_index_under_profile_li {
+ padding: 0;
+  line-height: 1.3em;
+  margin-bottom: 15px;
+}
+
+.FW_index_under_profile_div{
+display: table-cell;
+  zoom: 1;
+}
+
+
+
+
+
+/* POST_JOB.php */
+
+.Post_Job_File{
+position: relative;
+  padding: 6px;
+  background: #fff;
+  border: 1px dashed #a3a5a9;
+  
+      width: 435px;
+  height: 55px;
+}
+
+
+.Post_Job_Help_Description{
+  position: absolute;
+  left: 670px;
+  top: 80px;
+  padding: 7px 7px;
+  
+    width: 235px;
+  height: 115px;
+  
+    border: 1px solid #494949;
+		  border-radius: 5px;
+  background-color: #fff;
+}
+
+.Post_Job_Help_Name{
+  position: absolute;
+  left: 670px;
+  top: 30px;
+  padding: 7px 7px;
+  
+    width: 235px;
+  height: 70px;
+  
+    border: 1px solid #494949;
+	  border-radius: 5px;
+  background-color: #fff;
+  
+
+}
+
+.AddFile{
+
+}
+
+
+.Post_Job_Help_Language{
+  position: absolute;
+  left: 580px;
+  top: 60px;
+  padding: 7px 7px;
+  
+    width: 300px;
+  height: 240px;
+  
+    border: 1px solid #494949;
+	  border-radius: 5px;
+  background-color: #fff;
+
+
+}
+
+.Post_Job_Language_Button:hover{
+  background: #7DBE1E;
+}
+
+.Post_Job_Language_Button{
+  margin-top: 10px;
+  margin-left: 185px;
+  clear: both;
+  display:block;
+  
+    color: #fff;
+  background: #54BE1E;
+  vertical-align: middle;
+  
+    height: 40px;
+  font-size: 14px;
+  padding: 11px 18px 9px;
+  
+    border-radius: 2px;
+  outline: 0;
+    border: 0;
+}
+
+.Post_Job_Form_Elements{
+    clear: both;
+  display: block;
+}
+
+.Post_Job_Private_Icon{
+  opacity: .6;
+  margin: 5px 16px 0 8px;
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: 85%;
+  float:left;
+ 
+background-image: url(img/star_gold.svg)!important;
+}
+
+.Post_Job_Search_Icon{
+  opacity: .6;
+  margin: 5px 16px 0 8px;
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: 85%;
+  float:left;
+ 
+background-image: url(img/star_gold.svg)!important;
+}
+
+.Post_Job_Private{
+  padding-top: 25px;
+  padding-right: 50px;
+
+}
+
+
+.Post_Job_Duration_Box{
+
+color: #7c7c7a;
+  border: 1px solid #7c7c7a;
+  box-shadow: 0 0 0 1px #E0E0DD;
+  text-decoration: none;
+
+width: 130px!important;
+  height: 70px!important;
+  margin-right: 20px;
+  display: table;
+  float: left;
+  text-indent: 0;
+  
+  overflow: hidden;
+  /*  padding: 15px;  с этим не работает нажатие radio в поле padding*/
+  text-align: center;
+  vertical-align: top;
+  
+    background: #fff;
+  border-radius: 2px;
+  
+    cursor: pointer!important;
+	
+	  margin-bottom: 10px;
+}
+
+.Post_Job_Duration_Box_Checked{
+
+color: #49B01C;
+  border: 1px solid #49B01C;
+  box-shadow: 0 0 0 1px #49B01C;
+  text-decoration: none;
+
+width: 130px!important;
+  height: 70px!important;
+  margin-right: 20px;
+  display: table;
+  float: left;
+  text-indent: 0;
+  
+  overflow: hidden;
+  /*  padding: 15px;  с этим не работает нажатие radio в поле padding*/
+  text-align: center;
+  vertical-align: top;
+  
+    background: #fff;
+  border-radius: 2px;
+  
+    cursor: pointer!important;
+	
+	  margin-bottom: 10px;
+}
+
+.Post_Job_Duratation_Label{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: #7c7c7a;
+  font-family: "Gotham Book";
+  
+  cursor: pointer!important;
+  
+  padding: 15px;   /* с этим  работает нажатие radio в поле padding*/
+  
+}
+
+
+.Post_Job_Prepayment_Box{
+
+color: #7c7c7a;
+  border: 1px solid #7c7c7a;
+  box-shadow: 0 0 0 1px #E0E0DD;
+  text-decoration: none;
+
+width: 130px!important;
+  height: 70px!important;
+  margin-right: 20px;
+  display: table;
+  float: left;
+  text-indent: 0;
+  
+  overflow: hidden;
+  /*  padding: 15px;  с этим не работает нажатие radio в поле padding*/
+  text-align: center;
+  vertical-align: top;
+  
+    background: #fff;
+  border-radius: 2px;
+  
+    cursor: pointer!important;
+	
+	  margin-bottom: 10px;
+}
+
+.Post_Job_Prepayment_Box_Checked{
+
+color: #49B01C;
+  border: 1px solid #49B01C;
+  box-shadow: 0 0 0 1px #49B01C;
+  text-decoration: none;
+
+width: 130px!important;
+  height: 70px!important;
+  margin-right: 20px;
+  display: table;
+  float: left;
+  text-indent: 0;
+  
+  overflow: hidden;
+  /*  padding: 15px;  с этим не работает нажатие radio в поле padding*/
+  text-align: center;
+  vertical-align: top;
+  
+    background: #fff;
+  border-radius: 2px;
+  
+    cursor: pointer!important;
+	
+	  margin-bottom: 10px;
+}
+
+.Post_Job_Prepayment_Label{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: #7c7c7a;
+  font-family: "Gotham Book";
+  
+  cursor: pointer!important;
+  
+  padding: 15px;   /* с этим  работает нажатие radio в поле padding*/
+  
+}
+
+.Post_Job_Type_Radio{
+
+display: none;
+
+  margin-right: 10px;
+  width: auto;
+  
+  box-sizing: border-box;
+  padding: 0;
+  
+    cursor: pointer!important;
+	
+
+}
+
+
+.Post_Job_Type_Label_1{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: #494949;
+  font-family: "Gotham Book";
+  font-size: 170%;
+  
+  cursor: pointer!important;
+  
+  padding: 15px;   /* с этим  работает нажатие radio в поле padding*/
+  
+  	  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto 128px;
+  
+background-image: url(img/post_job_text.png)!important;
+}
+
+.Post_Job_Type_Label_2{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: #494949;
+  font-family: "Gotham Book";
+    font-size: 170%;
+  
+  cursor: pointer!important;
+  
+  padding: 15px;   /* с этим  работает нажатие radio в поле padding*/
+  
+  	  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto 128px;
+  
+background-image: url(img/post_job_video.png)!important;
+}
+
+.Post_Job_Type_Label_3{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: #494949;
+  font-family: "Gotham Book";
+    font-size: 170%;
+  
+  cursor: pointer!important;
+  
+  padding: 15px;   /* с этим  работает нажатие radio в поле padding*/
+  
+  	  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto 128px;
+  
+background-image: url(img/post_job_audio.png)!important;
+}
+
+
+.Post_Job_Type_Label_4{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: #494949;
+  font-family: "Gotham Book";
+    font-size: 170%;
+  
+  cursor: pointer!important;
+  
+  padding: 15px;   /* с этим  работает нажатие radio в поле padding*/
+  
+  	  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto 128px;
+  
+background-image: url(img/post_job_loc.png)!important;
+}
+
+.Post_Job_Choice_Panel{
+position: relative;
+display: inline-flex;
+}
+
+.Post_Job_Choice_Search{
+
+
+}
+
+.Post_Job_Choice_Search_Radio{
+
+
+}
+
+.Post_Job_Choice_Search_1{
+padding-bottom: 10px;
+
+}
+
+.Post_Job_Choice_Search_2{
+padding-bottom: 10px;
+
+}
+
+.Post_Job_Duration_Label{
+
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: #494949;
+  font-family: "Gotham Book";
+    font-size: 130%;
+  
+  cursor: pointer!important;
+  
+  padding: 15px;   /* с этим  работает нажатие radio в поле padding*/
+  
+
+}
+
+
+.Post_Job_Duration_Box:hover {
+color: #49B01C;
+  border: 1px solid #49B01C;
+  box-shadow: 0 0 0 1px #49B01C;
+  text-decoration: none;
+
+}
+
+
+.Post_Job_Type_Box {
+
+color: #7c7c7a;
+  border: 1px solid #7c7c7a;
+  box-shadow: 0 0 0 1px #E0E0DD;
+  text-decoration: none;
+
+width: 195px!important;
+  height: 85px!important;
+  margin-right: 20px;
+  display: table;
+  float: left;
+  text-indent: 0;
+  
+  overflow: hidden;
+  /*  padding: 15px;  с этим не работает нажатие radio в поле padding*/
+  text-align: center;
+  vertical-align: top;
+  
+    background: #fff;
+  border-radius: 2px;
+  
+    cursor: pointer!important;
+	
+	  margin-bottom: 10px;
+
+}
+
+
+.Post_Job_Type_Box_Checked {
+
+color: #49B01C;
+  border: 1px solid #49B01C;
+  box-shadow: 0 0 0 1px #49B01C;
+  text-decoration: none;
+
+width: 195px!important;
+  height: 85px!important;
+  margin-right: 20px;
+  display: table;
+  float: left;
+  text-indent: 0;
+  
+  overflow: hidden;
+  /*  padding: 15px;  с этим не работает нажатие radio в поле padding*/
+  text-align: center;
+  vertical-align: top;
+  
+    background: #fff;
+  border-radius: 2px;
+  
+    cursor: pointer!important;
+	
+	  margin-bottom: 10px;
+
+}
+
+.Post_Job_Type_Box:hover {
+color: #49B01C;
+  border: 1px solid #49B01C;
+  box-shadow: 0 0 0 1px #49B01C;
+  text-decoration: none;
+
+}
+
+
+.Post_Job_Prepayment_Box:hover {
+color: #49B01C;
+  border: 1px solid #49B01C;
+  box-shadow: 0 0 0 1px #49B01C;
+  text-decoration: none;
+
+}
+
+.Post_Job_Style{
+  moz-box-sizing: border-box;
+  webkit-box-sizing: border-box; 
+  box-sizing: border-box; 
+}
+
+.Post_Job_Style_col_1{
+text-align: center;
+}
+
+.Post_Job_Style_col_2{
+text-align: center;
+padding-bottom:20px;
+padding-top: 5px;
+}
+
+.Post_Job_Style_Label{
+display:inline-block;
+  padding-left: 25px;
+  padding-right: 55px;
+  text-indent: -25px;
+  margin-bottom: 10px;
+    font-weight: 400!important;
+}
+
+.Post_Job_Pair_Languages{
+font-size: 17px; 
+width: 300px;
+margin: 20px 0;
+overflow-y: hidden;
+margin-left: 100px;
+
+}
+
+.Post_Job_Choice_Language{
+position: relative;
+}
+
+.Post_Job_Choice_Language_From{
+width: 150px;
+float: left;
+padding-left: 50px;
+padding-right: 0;
+padding-bottom: 20px;
+padding-top: 20px;
+clear:both;
+}
+
+.Post_Job_Choice_Language_To{
+width:150px;
+float: left;
+padding-right: 0;
+padding-left: 100px;
+padding-bottom: 20px;
+padding-top: 20px;
+}
+
+
+.Post_Job_Up_Panel{
+padding: 16px 20px 0;
+border: 1px solid #E5E9E4;
+border-radius: 0 0 2px 2px;
+box-shadow: 0 2px 2px -1px #e3e3e3;
+font-size: 0.875rem;
+min-height: 50px;
+height: 100%;
+text-align: center!important;
+
+margin-bottom: 20px;
+}
+
+.Post_Job_Form{
+vertical-align: baseline;
+position: relative;
+margin-bottom: 20px;
+clear: both;
+
+  border-bottom: 1px solid #f2f2f0;
+  margin-bottom: 0;
+  
+  padding: 21px 20px;
+}
+
+.Post_Job_Label{
+display: block;
+padding-bottom: 15px;
+line-height: 1.5;
+font-weight: 700;
+width: auto;
+/*float: left;*/
+}
+
+.Post_Job_Price_Option{
+  padding-top: 20px;
+
+}
+
+
+
+.TemplateForm {
+padding: 0;
+float: right;
+width: 25%;
+display: block;
+border: 3px solid rgba(68, 192, 70, 0.48);
+border-radius: 8px;
+}
+
+.FormPostJob{
+float:left;
+
+  border: 1px solid #f2f2f0;
+  border-radius: 7px;
+}
+
+
+.PostJobHelpHidden {
+display: none!important;
+}
+
+/* замена. удалить .PostJobHelp {   
+float: right;
+width: 40%;
+display: inline-block;
+border: 3px solid rgba(68, 192, 70, 0.48);
+border-radius: 8px;
+background-color: #FFFFFF;
+position: absolute;
+margin-left: 30px;
+}*/
+
+.PostJobError {
+float: right;
+width: auto;
+display: inline-block;
+border: 3px solid rgba(255, 0, 0, 1);
+border-radius: 8px;
+background-color: #FFFFFF;
+position: absolute;
+margin-left: 10px;
+}
+
+
+.Form_My-Jobs {
+width: 100%;
+border-radius: 8px;
+padding-left: 5px;
+padding-right: 5px;
+}
+
+.EW-response-avatar {
+float:left;
+margin-right: 5px;
+
+border: 3px solid #e3e4e3;
+}
+
+.EW-response-information{
+padding-left: 12px;
+display: block;
+float: left;
+width: 80%;
+}
+
+.EW-response-freelancerinfo {
+float:left;
+margin-right: 5px;
+}
+
+.EW-response-left-part {
+float:left;
+width: 15%;
+}
+
+
+/*  Сообщения поле */
+.Message-box {
+background: #FFFFFF;
+  color: black;
+  border: 1px solid #C0CAD5;
+  width: 328px;
+  min-height: 40px;
+  padding: 3px 25px 3px 3px;
+  padding-bottom: 5px;
+  margin-bottom: 3px;
+  outline: 0;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  line-height: 150%;
+  word-wrap: break-word;
+  cursor: text;
+}
+
+.Message_box_text {
+  position: absolute;
+  bottom: 0; 
+      padding: 10px 0 0;
+	  text-align: left;
+  direction: ltr;
+overflow-x: hidden; /* прокрутка по горизонтали */
+overflow-y: auto; /* прокрутка по вертикали */
+height:50%; /* высота нашего блока */
+
+}
+
+.Message_box_input{
+width: 627px; 
+ bottom: -2px;
+z-index: 103;
+  border-top: 1px solid #DAE1E8;
+  padding: 8px 15px 0 67px;
+  position: absolute;
+  
+}
+
+
+/* Таблица в разделе сообщений в чате */
+.ChatMessageTo{
+float:right;
+}
+
+.ChatMessageFrom{
+float:left;
+}
+
+.ChatMessageReadCheck{
+  width: 25%;
+  height: 50px;
+ 
+}
+
+.ChatMessageContentTo{
+border: 1px solid #C0CAD5;
+background: #B5E7DA;
+
+ padding-top:20px;
+}
+
+.ChatMessageContentFrom{
+border: 1px solid #C0CAD5;
+background: rgba(237, 78, 90, 1);
+
+ padding-top:20px;
+}
+
+	
+	
+div > [contenteditable] {
+background: #FFFFFF;
+  color: black;
+  border: 1px solid #C0CAD5;
+  width: 328px;
+  min-height: 40px;
+  padding: 3px 25px 3px 3px;
+  padding-bottom: 5px;
+  margin-bottom: 3px;
+  outline: 0;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  line-height: 150%;
+  word-wrap: break-word;
+  cursor: text;
+ }
+
+
+/* ВЕРХНЯЯ ПАНЕЛЬ БЕЗ ЛИЧНОГО КАБИНЕТА */
+
+.FW_top_nav_ul_noncabinet_index{
+display: inline-block;
+vertical-align: bottom;
+position: relative;
+background: 0;
+padding: 0;
+margin: 0;
+padding-bottom: 20px;
+display: inline-block;
+position: relative;
+}
+
+/* ----------------------------------- */
+/* Классы для BLOG.PHP */
+/* ----------------------------------- */
+
+/* верх и общее */
+
+.News_Page_Title {
+width: 100%;
+margin-left: auto;
+margin-right: auto;
+margin-top: 0;
+margin-bottom: 0;
+max-width: 61.25rem;
+}
+
+.News_Page_Under_Title {
+margin: 25px 0;
+}
+/* левая часть */
+
+.News_article {
+margin-bottom: 30px;
+box-sizing: border-box;
+}
+
+.News_Main{
+display: table-cell;
+float: none !important;
+padding-bottom: 30px;
+position: relative;
+padding-left: 0.3125rem;
+padding-right: 0.3125rem;
+width: 66.66667%;
+}
+
+.News_Content{
+padding-top: 0;
+margin-top: 10px;
+display: table;
+height: 100%;
+width: 100%;
+margin-left: auto;
+margin-right: auto;
+margin-top: 0;
+margin-bottom: 0;
+max-width: 61.25rem;
+box-sizing: border-box;
+}
+
+.News_wrapper{
+height: 285px;
+position: relative;
+overflow: hidden;
+display: block;
+background: #efefef;
+border: 1px solid #efefef;
+box-shadow: 0 0 120px #ccc inset;
+text-align: center;
+}
+
+.News_title{
+position: absolute;
+top: 20px;
+left: 0;
+width: 100%;
+padding: 15px 20px;
+background: rgba(84,84,84,0.85);
+color: white;
+font-size: 1.5rem;
+font-family: 'Adelle_Light', sans-serif;
+font-weight: 300;
+text-align: left;
+margin: 0;
+}
+
+.News_image{
+width: 100%;
+display: inherit !important;
+border: none;
+vertical-align: middle;
+max-width: 100%;
+height: auto;
+}
+
+.News_meta{
+background: #efefef;
+height: 43px;
+line-height: 43px;
+font-size: 0.8125rem;
+padding: 0 12px;
+color: #545454;
+overflow: hidden;
+}
+
+.News_date{
+display: inline-block;
+margin-right: 22px;
+/* картинка календаря background: url('../images/icons-sa407c8db46.png') 0 -1017px no-repeat; */
+height: 18px;
+/*width: 17px;*/
+margin-top: -6px;
+}
+
+.News_author{
+display: inline-block;
+margin-right: 22px;
+text-align: left;
+/*background: url('../images/icons-sa407c8db46.png') 0 -1035px no-repeat;*/
+height: 17px;
+/*width: 16px;*/
+margin-top: -4px;
+}
+
+.News_content{
+padding: 16px 20px 0;
+border: 1px solid #efefef;
+border-radius: 0 0 2px 2px;
+box-shadow: 0 2px 2px -1px #e3e3e3;
+font-size: 0.875rem;
+}
+
+.News_read-more{
+display: block;
+margin-top: 35px;
+text-transform: lowercase;
+}
+
+/* Правая часть */
+
+.News_aside {
+display: table-cell;
+background: none;
+height: 100%;
+vertical-align: top;
+float: none !important;
+position: relative;
+padding-left: 0.3125rem;
+padding-right: 0.3125rem;
+width: 33.33333%;
+}
+
+.News_aside_wrapper{
+padding-left: 0.3125rem;
+background: #efefef;
+height: 100%;
+}
+
+
+
+/* ----------------------------------- */
+/* Классы для employer - INDEX.PHP */
+/* ----------------------------------- */
+
+.News_Index_Header{
+float: left;
+width: 50%;
+margin-top: 5px;
+margin-right: 7px;
+}
+
+.News_Index_article {
+margin-top: 15px;
+margin-bottom: 15px;
+box-sizing: border-box;
+}
+
+.News_Index_Main{
+display: table-cell;
+float: none !important;
+padding-bottom: 30px;
+position: relative;
+padding-left: 0.3125rem;
+padding-right: 0.3125rem;
+width: 66.66667%;
+}
+
+
+.News_Index_wrapper{
+height: 145px;
+position: relative;
+overflow: hidden;
+display: block;
+background: #efefef;
+border: 1px solid #efefef;
+box-shadow: 0 0 120px #ccc inset;
+text-align: center;
+}
+
+.News_Index_title{
+position: absolute;
+top: 20px;
+left: 0;
+width: 100%;
+padding: 15px 20px;
+background: rgba(84,84,84,0.85);
+color: white;
+font-size: 1.5rem;
+font-family: 'Adelle_Light', sans-serif;
+font-weight: 300;
+text-align: left;
+margin: 0;
+}
+
+.News_Index_image{
+width: 100%;
+display: inherit !important;
+border: none;
+vertical-align: middle;
+max-width: 100%;
+height: auto;
+}
+
+.News_Index_meta{
+background: #efefef;
+height: 41px;
+line-height: 43px;
+font-size: 0.8125rem;
+padding: 0 12px;
+color: #545454;
+overflow: hidden;
+}
+
+.News_Index_date{
+display: inline-block;
+/* картинка календаря background: url('../images/icons-sa407c8db46.png') 0 -1017px no-repeat; */
+height: 18px;
+margin-top: -6px;
+}
+
+.News_Index_author{
+display: inline-block;
+text-align: left;
+height: 17px;
+margin-top: -4px;
+}
+
+.News_Index_content{
+padding: 16px 20px 0;
+border: 1px solid #E5E9E4;
+border-radius: 0 0 2px 2px;
+box-shadow: 0 2px 2px -1px #e3e3e3;
+font-size: 0.875rem;
+min-height: 195px;
+height: 100%;
+}
+
+.News_Index_content_howto{
+padding: 16px 20px 0;
+border: 1px solid #E5E9E4;
+border-radius: 0 0 2px 2px;
+box-shadow: 0 2px 2px -1px #e3e3e3;
+font-size: 0.875rem;
+min-height: 195px;
+height: 100%;
+text-align: center!important;
+}
+
+.News_Index_read-more{
+float: right;
+display: block;
+margin-top: 15px;
+text-transform: lowercase;
+}
+
+.News_Index_Category{
+background: rgba(18, 194, 54, 0.82);
+display: block;
+width:135px;
+padding-left: 10px;
+padding-right: 10px;
+font-family: "Adelle_SemiBoldItalic", sans-serif;
+font-size: 0.875rem;
+font-style: italic;
+font-weight: normal;
+color: white !important;
+text-decoration: none;
+line-height: inherit;
+}
+
+
+.Index_Post_Job_Img{
+text-align: center!important;
+margin: 20px 0 40px;
+}
+
+/* HOWITWORKS.PHP */
+
+.HIW_header{
+padding-top: 20px;
+padding-bottom: 45px;
+background: rgba(27, 143, 158, 1);
+text-align:center;
+}
+
+.HIW_container{
+width: 984px;
+padding: 0px;
+padding-top: 30px;
+margin: 0 auto;
+height: 80px;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+
+
+.HIW_element_l{
+padding: 0px;
+margin-bottom: 10px;
+margin-top: 10px;
+padding-right: 20%;
+margin-right: 5%;
+margin-left: 5%;
+min-height: 115px;
+height: 100%;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+
+border-bottom: 1px solid #ccc;
+box-shadow: 0 1px 0 0 #fff;
+}
+
+.HIW_element_r{
+padding: 0px;
+margin-bottom: 10px;
+margin-top: 10px;
+margin-left: 5%;
+padding-left: 20%;
+margin-right: 5%;
+min-height: 115px;
+height: 100%;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+
+border-bottom: 1px solid #ccc;
+box-shadow: 0 1px 0 0 #fff;
+}
+
+.HIW_element_text{
+float: none;
+text-align: left;
+width: auto;
+}
+
+.HIW_element_img_l{
+float: left;
+margin: 10px 35px 30px 45px;
+width: 80px;
+height: 85px;
+}
+
+.HIW_element_img_r{
+float:  right;
+margin: 0 30px 50px 46px;
+width: 80px;
+height: 85px;
+}
+
+.HIW_section {
+width: 1060px;
+margin: 0 auto;
+margin-bottom: 1.5rem;
+position: relative;
+min-height: 500px;
+}
+
+.HIW_ul {
+margin: 0 auto;
+width: 950px;
+}
+
+.HIW_li {
+list-style: none;
+float: left;
+position: relative;
+top: 1px;
+margin: 0 .2em 1px 0;
+border-bottom: 0!important;
+padding: 0;
+white-space: nowrap;
+padding-left: 150px;
+}
+
+.HIW_li_a{
+display: block;
+cursor: pointer;
+width: 240px;
+padding: 13px 5px;
+font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+background-color: #B34343;
+color: #fff;
+text-align: center;
+}
+
+.HIW_arrow {
+background: url(img/HIW_arrow.png) bottom center no-repeat #EBF5E8;
+height: 50px;
+}
+
+.HIW_img_div{
+height: 250px;
+text-align: center!important;
+}
+.HIW_img{
+height: 250px;
+text-align: center!important;
+}
+
+
+/* Верхняя панель возврата к личному кабинете с страниц, которые находятся вне личного кабинета */
+
+.OutHeader {
+/*margin-bottom: 30px;*/
+min-width: 960px;
+padding-top: 20px;
+background-color: #3C9E1B;
+}
+
+.OutTopNav {
+padding-left: 0!important;
+margin: 0 auto;
+position: relative;
+width: 960px;
+}
+
+
+/* Страница Hired в Employer-Workspace */
+
+.Hired_tr{
+box-sizing: border-box;
+
+}
+
+.Hired_td{
+padding-right: 0;
+width: 61px;
+}
+
+.Hired_avatar{
+margin: 0 24px auto auto;
+
+webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+-ms-border-radius: 5px;
+-o-border-radius: 5px;
+border-radius: 5px;
+max-width: none;
+}
+
+.Hired_td_div{
+  max-width: 600px;
+  min-width: 600px;
+}
+
+.Hired_Name{
+display: block;
+margin-bottom: 25px;
+font: 700 22px sans-serif;
+
+}
+
+.Hired_Show_Job_a {
+  padding-left: 35%;
+  margin-top: 25px;
+  margin-bottom: 5px;
+  display: block;
+
+}
+
+
+/* Формирование таблицы с округлениями table \ td \ tr в hired.php employer-workspace*/
+
+/* параметры таблицы*/
+.Table_Hired {
+width: 100%;
+border-radius: 8px;
+padding-left: 5px;
+padding-right: 5px;
+
+
+border-collapse: separate;
+border-spacing: 0;
+}
+
+/* верхний левый угл - закругление на 7 пиксилей */
+.Table_Hired tbody tr:first-child td:first-child{
+moz-border-radius-topleft: 7px;
+webkit-border-top-left-radius: 7px;
+border-top-left-radius: 7px;
+}
+
+/* верхний правый угл - закругление на 7 пиксилей */
+.Table_Hired tbody tr:first-child td:last-child{
+moz-border-radius-topright: 7px;
+webkit-border-top-right-radius: 7px;
+border-top-right-radius: 7px;
+}
+
+/* нижний левый угл - закругление на 7 пиксилей */
+.Table_Hired tbody tr:last-child td:first-child{
+moz-border-radius-bottomleft: 7px;
+webkit-border-bottom-left-radius: 7px;
+border-bottom-left-radius: 7px;
+}
+
+/* нижний правый угл - закругление на 7 пиксилей */
+.Table_Hired tbody tr:last-child td:last-child{
+moz-border-radius-bottomright: 7px;
+webkit-border-bottom-right-radius: 7px;
+border-bottom-right-radius: 7px;
+}
+
+/* верхняя толщина таблицы в 3 пиксиля */
+.Table_Hired tbody tr:first-child td{
+border-top-width: 3px;
+}
+
+/* нижняя толщина таблицы в 3 пиксиля */
+.Table_Hired tbody tr:last-child td{
+border-bottom-width: 3px;
+}
+
+/* левая толщина первого элемента в 3 пиксиля */
+.Table_Hired td:first-child{
+border-left-width: 3px;
+}
+
+/* левая толщина последнего элемента в 3 пиксиля */
+.Table_Hired td:last-child{
+border-right-width: 3px;
+}
+
+/* общией настройки полей таблицы */
+.Table_Hired td{
+border: 1px solid #8E8E41;
+border-top-width: 0;
+border-left-width: 0;
+border-right-width: 0;
+padding: 8px 11px 7px;
+}
+
+
+
+/* Структура формы в которой отображается содержимое работы. Подходит для Post Job/Job/ect */
+
+.Job_Preview_Title {
+    margin: 15px 0px 30px;
+    position: relative;
+    float: left;
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+	
+	    font-size: 14px;
+		
+		width: 930px;
+		
+
+}
+
+.Job_Preview_Title_First{
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 32px;
+    font-weight: normal;
+	
+	    text-align: left;
+    width: 950px;
+    margin: 0px auto;
+
+}
+
+.Job_Preview_Title_Second{
+    color: #5d5d5d;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+
+/* Employer-workspace  -  job.php  post-job.php (предпросмотр) - форма работы (описание) */
+.Job_Preview_Detail{
+	    float: left;
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+	font-size: 14px;
+	
+    text-align: left;
+    margin: 0px auto;
+	
+	padding-bottom: 20px;
+}
+
+
+.Job_Preview_Detail_Main{
+padding: 15px;
+    border: solid 1px #d7d7d7;
+    height: 100%;
+    position: relative;
+	
+	    font-size: 14px;
+		
+    width: 740px;
+    text-align: left;
+    margin: 0px auto;
+    background-color: #fff;
+
+}
+
+.Job_Preview_Detail_First{
+min-height:130px;
+
+    overflow: hidden;
+    padding-bottom: 15px;
+}
+
+
+.Job_Preview_Detail_Li_1{
+    display: block;
+    width: 300px!important;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+
+.Job_Preview_Detail_Span{
+    display: inline-block;
+}
+
+
+.Job_Preview_Detail_Ul{
+    list-style-type: none;
+    padding: 0px;
+    float: left;
+    width: 170px;
+    padding-left: 100px;
+
+}
+
+.Job_Preview_Detail_Li_2{
+    display: block;
+    width: 300px!important;
+    overflow: hidden;
+    white-space: nowrap;
+	
+	    padding: 3px 0px 3px 30px;
+    height: 20px;
+	
+	background-position: 1px -267px;
+	
+	background: url('/mysite/img/bid_icon_job_preview.png') no-repeat top left;
+    display: inline-block;
+    zoom: 1;
+
+}
+
+.Job_Preview_Detail_Desc_Main{
+margin-top: 0!important;
+
+	padding: 15px;
+    border: solid 1px #d7d7d7;
+    height: 100%;
+    position: relative;
+	
+	    font-size: 14px;
+		
+    width: 740px;
+    text-align: left;
+    margin: 0px auto;
+    background-color: #fff;
+
+}
+
+.Job_Preview_Detail_Desc_Tittle{
+    padding-top: 0;
+    margin-top: 0!important;
+	    margin-bottom: 10px;
+	    color: #494949;
+		    font-size: 18px;
+}
+
+.Job_Preview_Detail_Description{
+    font-size: 15px;
+    word-wrap: break-word;
+	    margin-bottom: 15px;
+
+}
+
+
+
+
+
+/* ----------- My-job.php  сортировка -------------- */
+
+.EW_MyJobs_sort{
+float:right;
+padding-top: 5px;
+padding-bottom:5px;
+
+width: 545px;
+}
+
+/* ----------- My-job.php  работа с таблицей -------------- */
+
+
+
+/*
+cursor:pointer;
+background-color: #aaa;
+.EW_MyJobs_tr{
+ text-align: left;  Выравнивание по левому краю 
+
+ border: 1px solid white;  Рамка вокруг ячеек 
+}
+
+.EW_MyJobs_thead_tr{
+    height: 50px;
+padding: 15px;
+}
+
+.EW_MyJobs_tr:hover {
+background-color: #aaa;
+cursor:pointer;
+}
+
+.EW_MyJobs_tbody{
+    border: 1px solid #e0e0e0;
+	
+	
+	}
+
+*/
+	
+.EW_MyJobs_Table{
+ /* font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif; */
+  font-size: 16px;
+  background: white;
+  max-width: 100%;
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  
+  
+    margin-top: 25px;
+}	
+
+.EW_MyJobs_Table thead{
+  background: rgba(245, 250, 244, 1);
+}
+
+.EW_MyJobs_Table td {
+  border-bottom: 1px solid #ccc;
+  color: #3DA019;
+  padding: 9px 8px;
+  transition: .3s linear;
+  
+}
+
+.EW_MyJobs_td_0{
+    border-left: 1px solid #ccc;
+}
+
+.EW_MyJobs_td_1{
+    border-right: 1px solid #ccc;
+}
+
+.EW_MyJobs_Table th {
+  font-weight: bold;
+  color: #0F4C1F;
+  border-bottom: 2px solid #C4C8C3;
+  padding: 10px 8px;
+}
+
+.EW_MyJobs_Table tr:hover td{
+  color: #6699ff;
+  background-color: rgba(245, 250, 244, 1);
+cursor:pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.table_td_job{
+
+background: url(/mysite/img/flags/eng.png) no-repeat  center;
+    width: 130px;
+    height: 70px;
+	-moz-background-size: cover; /* Firefox 3.6+ */
+    -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: cover; /* Opera 9.6+ */
+    background-size: cover; /* Современные браузеры */
+}
+
+.table_td_job01{
+
+background: url(/mysite/img/flags/ru.png) no-repeat  center;
+    width: 130px;
+    height: 70px;
+		-moz-background-size: cover; /* Firefox 3.6+ */
+    -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: cover; /* Opera 9.6+ */
+    background-size: cover; /* Современные браузеры */
+}
+
+.table_td_job02{
+
+background: url(/mysite/img/flags/line.png) no-repeat  center;
+    width: 130px;
+    height: 70px;
+		-moz-background-size: cover; /* Firefox 3.6+ */
+    -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: cover; /* Opera 9.6+ */
+    background-size: cover; /* Современные браузеры */
+}
+
+.table_td_job03{
+
+background: url(/mysite/img/flags/arrow.png) no-repeat  center;
+    width: 130px;
+    height: 70px;
+		-moz-background-size: cover; /* Firefox 3.6+ */
+    -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: cover; /* Opera 9.6+ */
+    background-size: cover; /* Современные браузеры */
+}
+
+
+
+.table_td_job10{
+
+background: url(/mysite/img/flags/ru01.png) no-repeat  center;
+    width: 480px;
+    height: 51px;
+		-moz-background-size: cover; /* Firefox 3.6+ */
+    -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: cover; /* Opera 9.6+ */
+    background-size: cover; /* Современные браузеры */
+	opacity: 0.9;
+}
+
+.table_td_job11{
+
+background: url(/mysite/img/flags/eng01.png) no-repeat  center;
+    width: 480px;
+    height: 51px;
+		-moz-background-size: cover; /* Firefox 3.6+ */
+    -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: cover; /* Opera 9.6+ */
+    background-size: cover; /* Современные браузеры */
+	opacity: 0.9;
+}
